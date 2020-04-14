@@ -1,0 +1,173 @@
+//out: null
+.header {
+    margin: 0 auto;
+    width: @width-body;
+    padding-top: 28px;
+    box-sizing: border-box;
+    min-height: @header-height;
+    background-color: @bgc-header;
+    background-image: url(../img/header.jpg);
+    .bg-srp();
+    &-top {
+        margin: 0 0 286px;
+        min-height: 56px;
+        width: 100%;
+        .flex();
+        align-items: center;
+        &-logo {
+            margin: 0 219px 0 375px;
+            .font(@raleway, @regular, 34px);
+            color: #fff;
+            .flex-center();
+            &:hover {
+                color: #c7b299;
+            }
+            &:active {
+                color: #fff;
+            }
+            &-svg {
+                fill: currentColor;
+                width: 64px;
+                height: 56px;
+            }
+        }
+        &-nav {
+            .font(@montserrat, @light, 14px);
+            &-list {
+                margin: 0;
+                padding: 0;
+                .flex-center();
+                list-style-type: none;
+                &-item {
+                    margin: 0 30px 0 0;
+                    &:last-child {
+                        margin-right: 63px;
+                    }
+                    &-a {
+                        color: #fff;
+                        &:hover {
+                            color: #c7b299;
+                        }
+                        &:active {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &-basket {
+            margin: 0 28px 0 0;
+            padding: 0;
+            height: 24px;
+            width: 18px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: #fff;
+            &:hover {
+                color: #c7b299;
+            }
+            &:active {
+                color: #fff;
+            }
+            &-svg {
+                fill: currentColor;
+                with: 18px;
+                height: 24px;
+            }
+        }
+        &-search {
+            &-input {
+                width: 24px;
+                height: 25px;
+                outline: none;
+                background-image: url(../img/icon-search.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: none;
+                background-color: transparent;
+                &:focus {
+                    width: 250px;
+                    transition: width 1s ease-out;
+                    background-position: right;
+                    background-color: #fff;
+                    background-image: url(../img/icon-search-dark.svg);
+                }
+            }
+        }
+    }
+    &-slider {
+        .flex();
+        justify-content: space-between;
+        width: 1620px;
+        min-height: 601px;
+        margin: 0 auto;
+        position: relative;
+        &-btn {
+            margin: 93px 0 0;
+            width: 54px;
+            height: 54px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            border-top: 2px solid #a3a2a0;
+            border-right: 2px solid #a3a2a0;
+            &:hover {
+                border-color: #c7b299;
+                cursor: pointer;
+            }
+            &:active {
+                border-color: #a3a2a0;
+            }
+            &-left {
+                transform: rotate(-135deg);
+            }
+            &-right {
+                transform: rotate(45deg);
+            }
+        }
+        &-txt {
+            width: 588px;
+            color: #fff;
+            text-align: center;
+            &-design {
+                .font(@raleway, @medium, 36px);
+            }
+            &-template {
+                display: block;
+                margin: 15px 0 29px;
+                .font(@raleway, @extrabold, 52px);
+            }
+            &-p {
+                margin: 0 0 52px;
+                .font(@montserrat, @light, 16px);
+            }
+        }
+        &-pagination {
+            align-self: flex-end;
+            width: 100%;
+            .flex-center;
+            height: 14px;
+            &-item {
+                margin: 0 10px 0 0;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: #969493;
+                border: 2px solid transparent;
+                &:last-child {
+                    margin: 0;
+                }
+                &:hover {
+                    border: 2px solid #d3c1ad;
+                    background-color: transparent;
+                    transform: scale(1.2);
+                }
+                &:active {
+                    border: 2px solid transparent;
+                    background-color: #969493;
+                }
+            }
+        }
+    }
+}
