@@ -1,1 +1,32 @@
-// out: ../css/style.css
+                        //out: ../css/style.css
+                        @import "variables.less";
+                        @import "mixins.less";
+                        @import "fonts.less";
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        .btn {
+                            .font(@raleway, @extrabold, 14px);
+                            height: 53px;
+                            width: 170px;
+                            background-color: #998675;
+                            border: none;
+                            outline: none;
+                            color: #fff;
+                            text-transform: uppercase;
+                            border-radius: 3px;
+                            box-shadow: 0 3px 0px 0px #736357;
+                            &:hover {
+                                background-color: #b79d86;
+                                cursor: pointer;
+                            }
+                            &:active {
+                                background-color: #998675;
+                            }
+                        }
+                        
+                        @import "header.less";
+                        @import "main.less";
+                        @import "counter.less";
+                        @import "posts.less";
