@@ -304,9 +304,19 @@
                 outline: none;
                 border: none;
                 background-color: rgba(0, 0, 0, 0.2);
+                display: flex;
                 &-svg {
+                    margin: auto;
                     fill: #fff;
+                    cursor: pointer;
+                    &:hover{
+                        fill: #c7b299;
+                    }
+                    &:active{
+                        fill: #fff;
+                    }
                 }
+                
             }
             &-title {
                 margin: 0 0 26px;

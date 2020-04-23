@@ -57,6 +57,7 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 .btn {
   font-family: "raleway", "verdana", sans-serif;
@@ -638,8 +639,17 @@ a {
   outline: none;
   border: none;
   background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
 }
 .main-presentation-description-btn-svg {
+  margin: auto;
+  fill: #fff;
+  cursor: pointer;
+}
+.main-presentation-description-btn-svg:hover {
+  fill: #c7b299;
+}
+.main-presentation-description-btn-svg:active {
   fill: #fff;
 }
 .main-presentation-description-title {
@@ -925,4 +935,188 @@ a {
 }
 .posts-battons-item-icon:active {
   fill: #d2d2d2;
+}
+.partners {
+  margin: 0 auto;
+  padding: 130px;
+  box-sizing: border-box;
+  width: 1920px;
+  min-height: 489px;
+  background-image: url(../img/bg-partners.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners-logo {
+  margin: 0 90px 0 0;
+}
+.partners-logo:last-child {
+  margin: 0;
+}
+.partners-logo:hover {
+  filter: brightness(0);
+  opacity: 70%;
+}
+.partners-logo:active {
+  filter: brightness(100%);
+  opacity: 100%;
+}
+.footer {
+  margin: 0 auto;
+  width: 1920px;
+  min-height: 620px;
+  color: #555;
+}
+.footer-txt {
+  padding: 80px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 500px;
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+}
+.footer-txt-item {
+  margin: 0 29px 0 0;
+  width: 271px;
+}
+.footer-txt-item:last-child {
+  margin: 0;
+}
+.footer-txt-item-logo {
+  margin: 0 0 27px;
+  justify-content: flex-start;
+}
+.footer-txt-item-content {
+  margin: 0;
+  font-family: "montserrat", "verdana", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-txt-item-description {
+  line-height: 24px;
+}
+.footer-txt-item-link {
+  margin: 27px 0 0;
+  display: inline-block;
+  font-family: "montserrat", "verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-txt-item-link:hover {
+  color: #c7b299;
+}
+.footer-txt-item-link:active {
+  color: #fff;
+}
+.footer-txt-item-link:after {
+  border-left: 5px solid #fff;
+}
+.footer-txt-item-title {
+  margin: 27px 0 10px;
+  display: block;
+  font-family: "raleway", "verdana", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: #fff;
+  line-height: 18px;
+}
+.footer-txt-item-title-widget {
+  margin: 27px 0 30px;
+}
+.footer-txt-item-post {
+  padding: 20px 0;
+  border-bottom: 1px solid #252525;
+}
+.footer-txt-item-post:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.footer-txt-item-post-time {
+  font-family: "montserrat", "verdana", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  color: #363636;
+  line-height: 25px;
+}
+.footer-txt-item-post-link:hover .footer-txt-item-post-time {
+  color: #fff;
+}
+.footer-txt-item-post-link:hover .footer-txt-item-content,
+.footer-txt-item-post-link:hover .footer-txt-item-post-color {
+  color: #c7b299;
+}
+.footer-txt-item-post-link:active .footer-txt-item-post-time {
+  color: #363636;
+}
+.footer-txt-item-post-link:active .footer-txt-item-content {
+  color: #555;
+}
+.footer-txt-item-post-twitlink {
+  color: #00bff3;
+}
+.footer-txt-item-post-twitlink:hover {
+  color: #fff;
+}
+.footer-txt-item-post-twitlink:active {
+  color: #00bff3;
+}
+.footer-txt-item-post-color {
+  color: #959595;
+}
+.footer-txt-widget {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.footer-txt-widget-img {
+  margin: 0 0 10px 0;
+}
+.footer-copyright {
+  padding: 45px 375px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 112px;
+  background-color: #111;
+  font-family: "montserrat", "verdana", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copyright-container {
+  display: flex;
+}
+.footer-copyright-item {
+  padding: 0 12px;
+  height: 12px;
+  border-right: 1px solid #252525;
+}
+.footer-copyright-item:last-child {
+  border: none;
+  padding-right: 0;
+}
+.footer-copyright-item:first-child {
+  padding-left: 0;
+}
+.footer-copyright-item-link {
+  color: #959595;
+}
+.footer-copyright-hover:hover {
+  color: #c7b299;
+}
+.footer-copyright-hover:active {
+  color: inherit;
 }
